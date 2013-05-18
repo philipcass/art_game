@@ -18,8 +18,8 @@ public class InGamePage : BPage {
         
         terrain = new TweenTerrain();
         this.AddChild(terrain);
-        
-        player = new BasePlayer(Futile.whiteElement.name);
+        Futile.atlasManager.LoadImage("player");
+        player = new BasePlayer("player");
         this.AddChild(player);
     }
 
