@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PageFragments\ColourBackground.cs">
+    <Files>
+      <File FileName="c:\Users\phil\Documents\GitHub\art_game\Assets\Scripts\BaseMain.cs" Line="27" Column="6" />
+      <File FileName="c:\Users\phil\Documents\GitHub\art_game\Assets\Scripts\Pages\InGamePage.cs" Line="27" Column="26" />
+      <File FileName="Assets\Scripts\PageFragments\ColourBackground.cs" Line="18" Column="5" />
+      <File FileName="..\star_tycoon\Assets\Scripts\Pages\InGamePage.cs" Line="48" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
