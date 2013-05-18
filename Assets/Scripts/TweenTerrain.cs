@@ -13,6 +13,7 @@ public class TweenTerrain : FContainer {
             for(float x = -Futile.screen.halfWidth; x < Futile.screen.halfWidth; x+=tileSize){
                 FSprite s = new FSprite(Futile.whiteElement);
                 s.SetPosition(x,y);
+                s.scale = 0;
                 s.alpha = 0;
                 tiles[(int)(y+Futile.screen.halfHeight)/tileSize,(int)(x+Futile.screen.halfWidth)/tileSize] = s;
                 this.AddChild(s);
@@ -40,10 +41,15 @@ public class TweenTerrain : FContainer {
     FSprite TweenInTile(int y, int x) {
         Vector2 actualPos = tiles[y, x].GetPosition();
         if(Go.tweensWithTarget(tiles[y, x], false).Count == 0 && tiles[y, x].data == null) {
-            tiles[y, x].SetPosition(actualPos.x + 100, actualPos.y + 100);
+            Vector2 tweenPos = actualPos+(Vector2)(Random.rotation*new Vector2(100,100));
+            tiles[y, x].SetPosition(tweenPos);
             //float distance = Vector2.Distance(actualPos, tiles[y,x].GetPosition());
             //Debug.Log(distance);
-            Go.to(tiles[y, x], 0.666f, new TweenConfig().setEaseType(EaseType.CircOut).floatProp("x", actualPos.x).floatProp("y", actualPos.y).floatProp("alpha", 1).onComplete(HandlePlacement));
+            Go.to(tiles[y, x], 0.666f, new TweenConfig().setEaseType(EaseType.CircOut).floatProp("x", actualPos.x)
+                .floatProp("y", actualPos.y)
+                .floatProp("scale", 1)
+                .floatProp("alpha", 1)
+                .onComplete(HandlePlacement));
         }
         return tiles[y, x];
     }
@@ -54,6 +60,7 @@ public class TweenTerrain : FContainer {
                 FSprite s = tiles[(int)(y+Futile.screen.halfHeight)/tileSize,(int)(x+Futile.screen.halfWidth)/tileSize];
                 if(!activeTiles.Contains(s)){
                     if(Go.tweensWithTarget(s, false).Count == 0 && s.data != null) {
+                        s.scale = 0;
                         s.alpha = 0;
                         s.data = null;
                     }
