@@ -2,17 +2,40 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TweenTerrain.cs">
     <Files>
-      <File FileName="..\star_tycoon\Assets\Scripts\Pages\InGamePage.cs" Line="48" Column="1" />
-      <File FileName="Assets\Scripts\TweenTerrain.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TweenTerrain.cs" Line="67" Column="58" />
       <File FileName="c:\Users\phil\Documents\GitHub\art_game\Assets\Scripts\BaseMain.cs" Line="1" Column="1" />
       <File FileName="c:\Users\phil\Documents\GitHub\art_game\Assets\Scripts\Pages\InGamePage.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PageFragments\ColourBackground.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Futile\Futile.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Futile\Core\FTouchManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BasePlayer.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PageFragments" expanded="True" />
+                <Node name="Pages" expanded="True" />
+                <Node name="TweenTerrain.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Plugins" expanded="True">
+                <Node name="Futile" expanded="True">
+                  <Node name="Core" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\phil\Documents\GitHub\art_game\Assets\Scripts\TweenTerrain.cs" line="20" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

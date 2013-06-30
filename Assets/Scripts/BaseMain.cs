@@ -20,6 +20,10 @@ public class BaseMain : MonoBehaviour {
         fparams.origin = new Vector2(0.5f, 0.5f);
 
         Futile.instance.Init(fparams);
+        Futile.atlasManager.LoadImage("Atlases/abstract_0");
+        Futile.atlasManager.LoadFont("Abstract", "Atlases/abstract_0", "Atlases/abstract", 0, 0);
+
+
 
         _stage = Futile.stage;
      
